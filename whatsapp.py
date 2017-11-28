@@ -23,7 +23,7 @@ class PyWhatsApp():
         group_title = self.wait.until(EC.presence_of_element_located((By.XPATH, x_arg)))
         group_title.click()
 
-        inp_xpath = '//div[@class="input"][@dir="auto"][@data-tab="1"]'
+        inp_xpath = '//div[@class="pluggable-input-body copyable-text selectable-text"][@dir="auto"][@data-tab="1"]'
         input_box = self.wait.until(EC.presence_of_element_located((By.XPATH, inp_xpath)))
         input_box.send_keys(message + Keys.ENTER)
 
