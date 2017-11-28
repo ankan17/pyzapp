@@ -43,7 +43,7 @@ def main():
                                         Default is \"I am sending this message via Python Code. \
                                         You want to try??!!\"")
     parser.add_argument("-t", "--time", help="Date and time when u want to send your message. \
-                                        Enter in the format \"HH:MM DD.MM.YYYY\". Default is 12 AM of next day")
+                                        Enter in the format \"HH:MM DD.MM.YYYY\". Default is next minute")
     args = parser.parse_args()
 
     global friend

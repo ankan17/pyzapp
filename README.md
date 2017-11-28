@@ -25,7 +25,7 @@ Schedule your WhatsApp messages via Python!
 7. Click on **Finish**.
 8. Then choose your newly created profile and click on **Start Firefox**.
 9. Open up "<https://web.whatsapp.com>" and scan the QR code with your mobile after clicking on "WhatsApp Web".
-10. Make sure the "Keep me signed in" checkbox is scheduled.
+10. Make sure to check the "Keep me signed in" checkbox.
 
 #### The script
 
