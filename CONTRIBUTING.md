@@ -29,7 +29,7 @@ There should be **only one commit per pull request**.
 Please try to make sure that your commit message and body follows the
 guidelines below.
 
-- Commit message should be of the form : ``` fixes #[issue_number] - what you solved in one line ```
+- Commit message should be of the form : ``` Fixes #[issue_number] - what you solved in one line ```
 - After Commit message there should be a commit body where you can mention what you
   did in short or in detail
 
