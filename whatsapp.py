@@ -1,15 +1,18 @@
+import os
+import sys
+import time
+import argparse
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-import time
-import argparse
 
 
 class PyWhatsApp():
 
     def __init__(self, path_to_profile, path_to_driver):
+        os.environ['MOZ_HEADLESS'] = '1'
         self.profile = webdriver.FirefoxProfile(path_to_profile)
         self.path_to_driver = path_to_driver
 
