@@ -53,6 +53,10 @@ You can also run `python pyzapp.py --help` for more details
 
 For any error or suggestion, feel free to contact me on my mail at [friendyankan@gmail.com]().
 
+## For contributors
+
+Follow the guidelines provided [here](https://github.com/ankan17/pyzapp/blob/master/CONTRIBUTING.md) if you wish to contribute to the project.
+
 ## License
 
 This content is licensed under MIT License. See the [license](https://raw.githubusercontent.com/ankan17/pyzapp/master/LICENSE).
