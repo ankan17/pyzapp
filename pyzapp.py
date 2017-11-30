@@ -8,7 +8,7 @@ from whatsapp import PyWhatsApp
 class ValidationError(Exception):
     """Raise when the time argument does not match the format"""
 
-class FutureError(Exception):
+class TimestampError(Exception):
     """Raise when the time argument is not in future"""
 
 # This is the default message. Change it to change the default message being sent by Pyzapp
@@ -25,11 +25,11 @@ def dateValidator(string):
         hour,minute, day, month, year = map(int, re.findall(r'\d{2,4}', string))
         scheduled_time = date = datetime.datetime(hour=hour, minute=minute, day=day, month=month, year=year)
         if scheduled_time < datetime.datetime.now():
-            raise FutureError
+            raise TimestampError
     except (ValueError, TypeError, ValidationError):
         print("Invalid Date Format: Please use the mentioned format. \nType python pyzapp.py --help for more information")
         exit(1)
-    except FutureError:
+    except TimestampError:
         print("Time Set in Past: You cannot schedule a message to be sent in past. \nPlease enter a valid date in future")
         exit(1)
 
